@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="profile">
+            <h2>My Profile</h2>
+            <img src="picture.jpg" alt="Profile Picture" data-testid="slackProfilePicture"><pre></pre>
+            <p>Slack Name: <span data-testid="slackDisplayName">Olije Obande</span></p>
+            <p>Slack Email: <span data-testid="slackEmail">olijayobande@gmail.com</span></p>
+        </section>
+        <section id="goals">
+            <h2>My Tech Goals</h2>
+           <p class="text">In 2years time, I am hoping to achieve the following goals:</p> 
+            <p><ul>
+                <li>To build a well functional website</li>
+                <li>To collaborate and work with diverse teams</li>
+                <li>To be mentored and also to connect with like minds</li>
+                <li>To land a well paying Tech job in the tech industry</li>
+            </ul></p>
+        </section>
+        <section id="links">
+            <h2>Available Links and Resources</h2>
+            <ul>
+                <li><a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">HNG Learn</a></li>
+                <li><a href="https://keyword.dog" target="_blank" data-testid="keywordLink">Keyword.Dog</a></li>
+                <li><a href="https://scrapeanyweb.site" target="_blank" data-testid="scrapeanywebLink">ScrapeAnyWeb</a></li>
+            </ul>
+        </section>
+    
+        <section id="time">
+            <h2>Time and Day</h2>
+            <p>Time(UTC): <span id="currentTimeUTC" data-testid="currentTimeUTC">Loading...</span></p>
+            <p> Day: <span id="currentDay" data-testid="currentDay">Loading...</span></p>
+        </section>
+    </main>
+    <footer>Designed by olije obande 2024</footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
