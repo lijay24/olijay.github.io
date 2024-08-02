@@ -1,46 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My personal website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <section class="profile">
-            <h2>My Profile</h2>
-            <img src="picture.jpg" alt="Profile Picture" data-testid="slackProfilePicture"><pre></pre>
-            <p>Slack Name: <span data-testid="slackDisplayName">Olije Obande</span></p>
-            <p>Slack Email: <span data-testid="slackEmail">olijayobande@gmail.com</span></p>
-        </section>
-        <section id="goals">
-            <h2>My Tech Goals</h2>
-           <p class="text">In 2years time, I am hoping to achieve the following goals:</p> 
-            <p><ul>
-                <li>To build a well functional website</li>
-                <li>To collaborate and work with diverse teams</li>
-                <li>To be mentored and also to connect with like minds</li>
-                <li>To land a well paying Tech job in the tech industry</li>
-            </ul></p>
-        </section>
-        <section id="links">
-            <h2>Available Links and Resources</h2>
-            <ul>
-                <li><a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">HNG Learn</a></li>
-                <li><a href="https://keyword.dog" target="_blank" data-testid="keywordLink">Keyword.Dog</a></li>
-                <li><a href="https://scrapeanyweb.site" target="_blank" data-testid="scrapeanywebLink">ScrapeAnyWeb</a></li>
-            </ul>
-        </section>
-    
-        <section id="time">
-            <h2>Time and Day</h2>
-            <p>Time(UTC): <span id="currentTimeUTC" data-testid="currentTimeUTC">Loading...</span></p>
-            <p> Day: <span id="currentDay" data-testid="currentDay">Loading...</span></p>
-        </section>
-    </main>
-    <footer>Designed by olije obande 2024</footer>
-    <script src="script.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-</body>
+		<link rel="stylesheet" href="./css/styles.css" />
+
+		<title>Portfolio Assignment</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<nav>
+				<div class="logo">
+					<img src="./photos/logo2.png" alt="application logo" />
+				</div>
+				<ul>
+					<li><a href="#">About me</a></li>
+					<li><a href="#">Skills</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#" class="active">CONTACT ME</a></li>
+				</ul>
+
+				
+			</nav>
+		</header>
+
+		<main>
+			<!-- main -->
+			<section class="section1">
+				<div class="slant"></div>
+				<div class="hero-text">
+					<div class="text">
+						<h1>Hi, i am</h1>
+						<h2>Tomasz Gajda</h2>
+						<p>Front-end Developer / UI Designer</p>
+					</div>
+
+					<div class="hero-icons">
+						<span><img src="./photos/Vector3.png" alt="email" /></span>
+						<span><img src="./photos/gitt.svg" alt="github" /></span>
+						<span
+							><img src="./photos/linkedin2.png" alt="linkedin" srcset=""
+						/></span>
+					</div>
+				</div>
+				<div class="hero-image">
+					<img src="./images/personal-image.png" alt="personal image" />
+				</div>
+			</section>
+
+			<!-- ITBERIES -->
+			<section class="beries">
+				<aside class="beries__content">
+					<h2>IT BERRIES</h2>
+					<p>
+						Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
+						varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
+						quis libero viverra facilisis ut ac est. Morbi commodo, eros in
+						dignissim tempus, lacus odio rutrum augue, in semper sem magna quis
+						tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet elit.
+						Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet
+						varius turpis vel pharetra. Ut ante justo, consequat vitae elementum
+						tempor, accumsan nec eros.
+					</p>
+					<button type="button" class="read-more-btn btn">READ MORE</button>
+				</aside>
+				<aside class="beries_img">
+					<img src="./photos/Logo ITB.png" alt="" />
+				</aside>
+			</section>
+
+			<!-- ABOUT ME -->
+			<section class="about-me">
+				<aside class="about__me">
+					<h2 class="about-me-header outline">ABOUT ME</h2>
+					<p>
+						Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
+						varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
+						quis libero viverra facilisis ut ac est.
+					</p>
+
+					<!-- EXPLORE -->
+					<h2 class="about-me-explore outline">EXPLORE</h2>
+
+					<figure>
+						<img src="./photos/separator.png" alt="seperator-block" />
+					</figure>
+				</aside>
+				<!-- services -->
+				<aside class="services">
+					<div class="service1">
+						<div class="icon">
+							<img src="./images/design.png" alt="" srcset="" />
+						</div>
+						<div class="text-detai">
+							<h3>DESIGN</h3>
+							<p>
+								I can design the site based on your needs and suggestions. I can
+								also design the site from scratch and consult you during the
+								job.
+							</p>
+						</div>
+					</div>
+					<div class="service2">
+						<div class="icon">
+							<img src="./images/deve.png" alt="" srcset="" />
+						</div>
+						<div class="text-detai">
+							<h3>DEVELOPMENT</h3>
+							<p>
+								I can design the site based on your needs and suggestions. I can
+								also design the site from scratch and consult you during the
+								job.
+							</p>
+						</div>
+					</div>
+					<div class="service3">
+						<div class="icon">
+							<img src="./images/maintenance.png" alt="" srcset="" />
+						</div>
+						<div class="text-detai">
+							<h3>MAINTENANCE</h3>
+							<p>
+								I can design the site based on your needs and suggestions. I can
+								also design the site from scratch and consult you during the
+								job.
+							</p>
+						</div>
+					</div>
+				</aside>
+				<figure>
+					<img src="./photos/separator.png" alt="seperator-block" />
+				</figure>
+			</section>
+
+			<!-- SKILLS -->
+			<section class="skills">
+				<h2 class="skills-heading outline">SKILLS</h2>
+
+				<!-- present skills -->
+				<div class="present-skills">
+					<h3>USING NOW:</h3>
+					<div class="skills_con">
+						<div class="overall">
+							<div class="icon-card">
+								<img src="./photos/html3.png" alt="html3" />
+								<p>HTMLS</p>
+							</div>
+							<div class="icon-card">
+								<img src="./photos/css3.png" alt="css3" />
+								<p>CSS3</p>
+							</div>
+							<div class="icon-card">
+								<img src="./photos/sass.png" alt="sass" />
+								<p>SASS</p>
+							</div>
+							<div class="icon-card">
+								<img src="./photos/js.png" alt="" />
+								<p>JAVASCRIPT</p>
+							</div>
+							<div class="icon-card">
+								<img src="./photos/react.png" alt="react" />
+								<p>REACT</p>
+							</div>
+							<div class="icon-card">
+								<img src="./photos/bootstrap.png" alt="bootstrap" />
+								<p>BOOTSTRAP</p>
+							</div>
+							<div class="icon-card">
+								<img src="./photos/Git-Icon.png" alt="git" />
+								<p>GIT</p>
+							</div>
+							<div class="icon-card">
+								<img src="./photos/figma.png" alt="figma" />
+								<p>FIGMA</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Learning -->
+				<div class="learning-skills">
+					<h3>LEARNING:</h3>
+					<div class="flex__card">
+						<div class="icon-card">
+							<img src="./photos/nodejs.png" alt="nodejs" />
+							<p>NODEJS</p>
+						</div>
+						<div class="icon-card">
+							<img src="./photos/mysql.png" alt="mysql" />
+							<p>MYSQL</p>
+						</div>
+						<div class="icon-card">
+							<img src="./photos/mongodb.png" alt="mongodb" />
+							<p>MONGODB</p>
+						</div>
+						<div class="icon-card">
+							<img src="./photos/typescript.png" alt="typescript" />
+							<p>TYPESCRIPT</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Others -->
+				<div class="other-skills">
+					<h3>OTHER SKILLS:</h3>
+
+					<div class="flex__card">
+						<div class="icon-card">
+							<img src="./photos/angleski.png" alt="angleski" />
+							<p>ANGIELSKI C1/C2</p>
+						</div>
+						<div class="icon-card">
+							<img src="./photos/spanish.png" alt="spanish" />
+							<p>HISZPAŃSKI B1/B2</p>
+						</div>
+						<div class="icon-card">
+							<img src="./photos/c++.png" alt="c++" />
+							<p>C++</p>
+						</div>
+						<div class="icon-card">
+							<img src="./photos/c.png" alt="programming" />
+							<p>C</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- PORTFOLIO -->
+			<section class="portfolio">
+				<div class="portfolio-wrapper">
+					<h2 class="portfolio-heading outline">PORTFOLIO</h2>
+				</div>
+			</section>
+
+			<section class="tab-flitters">
+				<!-- Filters -->
+				<div class="filter">
+					<span
+						><a href="#">ALL</a>
+						<hr
+					/></span>
+					<span
+						><a href="#"
+							>CODED
+							<hr /> </a
+					></span>
+					<span
+						><a href="#">DESIGN</a>
+						<hr
+					/></span>
+				</div>
+			</section>
+
+			<section class="project__line">
+				<!-- projects  sECTION-->
+				<aside class="projects">
+					<div><img src="./images/Project1.png" alt="" /></div>
+					<div><img src="./images/project2.png" alt="" /></div>
+					<div><img src="./images/Project6.png" alt="" /></div>
+					<div class="hidden"><img src="./images/Project3.png" alt="" /></div>
+					<div class="hidden"><img src="./images/Project4.png" alt="" /></div>
+					<div class="hidden"><img src="./images/Project5.png" alt="" /></div>
+				</aside>
+				<h3>And many more to come</h3>
+			</section>
+
+			<!-- CONTACT -->
+			<section class="contact">
+				<h2 class="contact-heading outline">CONTACT</h2>
+				<p>
+					Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
+					varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
+					quis libero viverra facilisis ut ac est.
+				</p>
+
+				<figure>
+					<img src="./photos/separator.png" alt="seperator-block" />
+				</figure>
+
+				<!-- contact form -->
+				<form action="#" method="post">
+					<!-- name -->
+					<input
+						type="text"
+						placeholder="Enter Your Name*"
+						id="name"
+						name="name" />
+					<!-- email -->
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Enter Your Email*" />
+					<!-- phone no -->
+					<input
+						type="number"
+						name="number"
+						id="number"
+						placeholder="Enter Your Phone No" />
+					<!-- text content -->
+					<textarea
+						name="comment"
+						id="comment"
+						placeholder="Your Message*"></textarea>
+					<!-- submit-btn -->
+					<button type="submit" class="submit-btn btn">SUBMIT</button>
+				</form>
+			</section>
+		</main>
+
+		<!-- Footer SECTION-->
+		<footer>
+			<div class="top-icon">
+				<img src="./photos/doublearrow.svg" alt="" />
+			</div>
+			<p>BACK TO TOP</p>
+
+			<div class="icons" style="background-color: black">
+				<span class="facebook"><img src="./assets/facebook.png" alt="" /></span>
+				<span class="linkedin"
+					><img src="./photos/Vectorlinkedin-.png" alt=""
+				/></span>
+				<span class="instagram"
+					><img src="./photos/Vectorinstagram-.png" alt=""
+				/></span>
+				<span class="email"><img src="./photos/Vector3.png" alt="" /></span>
+			</div>
+			<p>@2020 Tomasz Gajda All Rights Reserved.</p>
+		</footer>
+	</body>
 </html>
